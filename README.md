@@ -1,32 +1,38 @@
 https://chatgpt.com/share/678515b9-ec34-8002-8f52-7807b8775d14
-# Selenium Automated Testing: Login Functionality
+Dưới đây là phiên bản cải tiến của `README.md` theo các gợi ý đã nêu trước:
 
-This project demonstrates automated testing using **Selenium** for a login functionality on a web application. It includes both positive and negative test cases, checks for UI components, and measures login performance.
+---
+
+# Selenium Automated Testing for Web Login Functionality
+
+This project demonstrates how to automate the testing of login functionality in a web application using **Selenium WebDriver**, covering both positive and negative scenarios, UI checks, and performance testing.
 
 ---
 
 ## 📜 **Project Overview**
 
-The project covers the following test cases:
+The project includes the following test cases:
 
-1. **Positive Login**: Valid username and password.
-2. **Negative Login**: Invalid username or password.
-3. **UI Verification**: Ensures all key elements (username field, password field, login button) are displayed.
-4. **Performance Check**: Measures the time taken for login and page load.
+1. **Positive Login Test**: Valid username and password.
+2. **Negative Login Test**: Invalid username or password.
+3. **UI Verification**: Ensures that all essential elements (username field, password field, login button) are displayed.
+4. **Performance Check**: Measures the time taken to load the secure page after login.
 
-Each test is implemented with **Python** using **Selenium WebDriver** for browser automation.
+This project uses **Python** with **Selenium WebDriver** for browser automation.
 
 ---
 
 ## 📂 **Project Structure**
 
+The project structure is as follows:
+
 ```
 .
 ├── selenium_login_test
 │   ├── test.py                 # Main script containing the test cases
-│   ├── requirements.txt        # Python dependencies
-│   ├── chromedriver.exe        # Chrome WebDriver (update for your system)
-└── README.md                   # Documentation
+│   ├── requirements.txt        # Python dependencies (e.g., selenium==4.x.x)
+│   ├── chromedriver.exe        # Chrome WebDriver (ensure it's compatible with your browser version)
+└── README.md                   # Project documentation
 ```
 
 ---
@@ -34,6 +40,7 @@ Each test is implemented with **Python** using **Selenium WebDriver** for browse
 ## 🚀 **Features**
 
 ### 1. **Positive Login Test**
+
 Tests successful login with valid credentials.
 
 ```python
@@ -42,6 +49,7 @@ check_message(driver, ".flash.success", "You logged into a secure area!")
 ```
 
 ### 2. **Negative Login Test**
+
 Tests unsuccessful login with invalid credentials.
 
 ```python
@@ -50,7 +58,8 @@ check_message(driver, ".flash.error", "Your username is invalid!")
 ```
 
 ### 3. **UI Verification**
-Ensures the presence of all essential elements on the login page.
+
+Ensures that all essential elements are displayed on the login page.
 
 ```python
 assert driver.find_element(By.ID, "username").is_displayed()
@@ -59,6 +68,7 @@ assert driver.find_element(By.CSS_SELECTOR, "button[type='submit']").is_displaye
 ```
 
 ### 4. **Performance Check**
+
 Measures the time taken to load the secure page after login.
 
 ```python
@@ -86,13 +96,14 @@ def test_login_success(driver):
 
 ## 📊 **Test Results**
 
-### Expected Outcomes
-- Positive login: Displays a success message and navigates to the secure area.
-- Negative login: Displays an error message for invalid credentials.
-- UI components: All essential elements (username, password, login button) are present.
-- Performance: Page load completes within 5 seconds.
+### Expected Outcomes:
+- **Positive login**: A success message is displayed, and the user is navigated to the secure area.
+- **Negative login**: An error message is shown for invalid credentials.
+- **UI components**: All essential elements (username field, password field, and login button) are displayed correctly.
+- **Performance**: The page loads within 5 seconds.
 
 ### Example Output
+
 ```bash
 === Test: UI Verification ===
 PASS: All UI elements are displayed correctly.
@@ -132,7 +143,7 @@ PASS: Page loaded within acceptable time (2.5 seconds).
    ```
 4. Run the tests:
    ```bash
-   python login_test.py
+   python test.py
    ```
 
 ---
@@ -141,12 +152,12 @@ PASS: Page loaded within acceptable time (2.5 seconds).
 
 ### Test Cases
 
-| Test Case             | Input                     | Expected Result                             |
-|-----------------------|---------------------------|---------------------------------------------|
-| **Positive Login**    | Valid credentials         | Success message and secure page load.       |
-| **Negative Login**    | Invalid credentials       | Error message for invalid credentials.      |
-| **UI Verification**   | -                         | All elements (username, password, button).  |
-| **Performance Test**  | Valid credentials         | Page load completes in under 5 seconds.     |
+| Test Case             | Input                                 | Expected Result                             |
+|-----------------------|---------------------------------------|---------------------------------------------|
+| **Positive Login**    | Username: `tomsmith`, Password: `SuperSecretPassword!` | Success message and secure page load.       |
+| **Negative Login**    | Invalid username or password         | Error message for invalid credentials.      |
+| **UI Verification**   | -                                     | All elements (username, password, button) are displayed correctly. |
+| **Performance Test**  | Valid credentials                     | Page load completes in under 5 seconds.     |
 
 ---
 
@@ -172,9 +183,20 @@ PASS: Page loaded within acceptable time (2.5 seconds).
 
 - **Name**: Nguyen Son Tung  
 - **GitHub**: [Son-Tung](https://github.com/Son-Tung)  
-- **Email**: sontung18072004@gmail.com  
+- **Email**: [sontung18072004@gmail.com](mailto:sontung18072004@gmail.com)  
 
 Feel free to contribute or suggest improvements!
 
+---
 
-This `README.md` file provides a complete overview of the project, ensuring clarity for anyone who wants to understand or contribute to the repository.
+## 🤝 **Contributing**
+
+Feel free to open an issue or submit a pull request if you have improvements or bug fixes.
+
+---
+
+## 📄 **License**
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+
+---
