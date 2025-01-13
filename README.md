@@ -1,5 +1,4 @@
 https://chatgpt.com/share/678515b9-ec34-8002-8f52-7807b8775d14
-Dưới đây là phiên bản cải tiến của `README.md` theo các gợi ý đã nêu trước:
 
 ---
 
