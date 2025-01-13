@@ -172,7 +172,7 @@ PASS: Page loaded within acceptable time (2.5 seconds).
 
 - **Name**: Nguyen Son Tung  
 - **GitHub**: [Son-Tung](https://github.com/Son-Tung)  
-- **Email**: son.tung@example.com  
+- **Email**: sontung18072004@gmail.com  
 
 Feel free to contribute or suggest improvements!
 
