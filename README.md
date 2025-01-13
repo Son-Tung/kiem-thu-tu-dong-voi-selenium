@@ -23,7 +23,7 @@ Each test is implemented with **Python** using **Selenium WebDriver** for browse
 ```
 .
 ├── selenium_login_test
-│   ├── login_test.py           # Main script containing the test cases
+│   ├── test.py                 # Main script containing the test cases
 │   ├── requirements.txt        # Python dependencies
 │   ├── chromedriver.exe        # Chrome WebDriver (update for your system)
 └── README.md                   # Documentation
