@@ -1,7 +1,3 @@
-https://chatgpt.com/share/678515b9-ec34-8002-8f52-7807b8775d14
-
----
-
 # Selenium Automated Testing for Web Login Functionality
 
 This project demonstrates how to automate the testing of login functionality in a web application using **Selenium WebDriver**, covering both positive and negative scenarios, UI checks, and performance testing.
